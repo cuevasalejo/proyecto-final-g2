@@ -3,17 +3,6 @@ const express = require('express');
 const router = express.Router();
 const Note = require('../models/Note');
 
-const mongoose = require('mongoose');
-
-const NoteSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  text: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
-});
-
-const Note = mongoose.model('Note', NoteSchema);
-
 router
   .route('/api/notes')
   // buscar todas las notas
@@ -49,24 +38,5 @@ router
       res.json({ msg: 'Nota borrada' });
     })
   });
-
-  router
-  .put('/notes/:id', (req, res, next) => {
-    const note = {
-      title: req.body.title,
-      text: req.body.text,
-      updatedAt: Date.now()
-    };
-    const options = {
-      new: true,
-      omitUndefined: true
-    };
-    Note.findByIdAndUpdate(req.params.id, note, options).exec((err, note) => {
-      if (err) return next(err);
-      if (!note) return res.status(404).json({ msg: 'Not found' });
-      res.status(200).json(note);
-    });
-  });
-
 
 module.exports = router;
