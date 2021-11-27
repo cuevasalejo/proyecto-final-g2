@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "proyecto-final-g2",
+=======
+  "name": "proyecto-final-g1",
+>>>>>>> e169fe8 (Actualizacion)
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
