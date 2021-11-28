@@ -1,12 +1,13 @@
 # requests
-# crear una nota
 
-curl -X POST -H "Content-Type: application/json" -d '{"title":"Hacer el martes","text": "Lavar la ropa"}' localhost:3000/api/notes
+# crear un id
 
-# borrar una nota
+  curl -X POST -H "Content-Type: application/json" -d '{"title": "PAPU", "text": "algo"}'  localhost:3000/api/notes
 
-curl -X DELETE localhost:3000/api/notes/616dc00e7f45d9fdee457886
+#borrar notas
 
-# modificar una nota
+curl -x DELETE localhost/3000/api/notes/6177103e9a7c486c2b4fcdc4
 
-curl -X PUT -H "Content-Type: application/json" -d '{"title":"Hacer el miercoles"}' localhost:3000/api/notes/616dc00e7f45d9fdee457886
+# MODIFICAR BEBETO
+
+curl -X PUT -H "Content-Type: application/json" -d '{"title": "PAPU", "text": "algo"}'  localhost:3000/api/notes

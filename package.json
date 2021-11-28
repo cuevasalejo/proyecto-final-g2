@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "proyecto-final-g2",
-=======
-  "name": "proyecto-final-g1",
->>>>>>> e169fe8 (Actualizacion)
+  "name": "proyecto-final-g4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,9 +13,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^6.0.11"
+    "mongoose": "^6.0.12"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.14"
   }
 }
