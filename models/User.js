@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // en User.js
-=======
-  // en User.js
->>>>>>> e169fe8 (Actualizacion)
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
