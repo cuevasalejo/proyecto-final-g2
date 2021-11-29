@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  background-color: palevioletred;
+  background-image: url(https://wallpaperaccess.com/full/1297106.jpg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+form {
+  text-align: center;
+  border: 2px solid gray;
+  margin: 10px;
+  padding: 20px;
+  background: #ffbfff;
+  border-radius: 5px;
+}
+
+.notas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+}
+
+.nota {
+    border: 5px solid rgb(104, 41, 112);
+    margin: 20px;
+    padding: 20px;
+    background-color: pink;
+    color: honeydew;
+    opacity: 80%;
+}
+
+.nota:hover {
+  opacity: 100%;
+}
+
+.nota button{
+  margin: 5px auto;
+  background-color: palevioletred;
+  color: black;
+}
